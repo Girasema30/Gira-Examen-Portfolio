@@ -191,10 +191,9 @@ h1 span{
     margin: 2em;
 }
 
-.card__img {
+.card__img img {
     width: 100%;
     height: 198px;
-    background-image: url(img/Computer-with-code-with-fdbbb7-background.png);
     background-size: cover;
 }
 
