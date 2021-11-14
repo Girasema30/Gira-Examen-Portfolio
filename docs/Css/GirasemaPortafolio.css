@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff9893;
+    color: #ffffff;
+}
+
+/* h2 {
+    /* Esto es para ver si le pongo stroke a la página
+    url(https://filisantillan.com/blog/text-stroke/)
+    -webkit-text-stroke-color: 2px #000000;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.logo {
+    margin-top: -7px;
+}
+
+.logo span{
+    color: #ff0c00;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: #ff0c00;
+}
+
+
+.menu a:hover {
+    background-color: #FCEDED;
+    color: #ff9893;
+    transition: linear 0.5s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1 span{
+    color: #ff0c00;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #ff0c00;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #ff0c00;
+}
+
+.download-cv:hover {
+    background-color: #ffffff;
+    color: #ff0c00;
+    box-shadow: none;
+}
+
+.main img {
+    width: 320px;
+    border: 7px solid #ff0c00;
+    height: 520px;
+}
+
+.about img {
+    width: 670px;
+    height: 610px;
+    grid-column: 1/5;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: #ff9893;
+}
+
+.about-info button:hover{
+    background-color: #ffffff;
+    color: #ff0c00;
+    box-shadow: 1px 9px 11px -5px #ff9893;
+}
+
+.divider-about {
+    height: 4px;
+    width: 9.4em;
+    background-color: #ff0c00;
+    margin-top: 7px;
+    margin-bottom: 2em;
+}
+
+/*Aquí inicia el código de estilo de la sección "Portfolio"*/
+
+.portfolio {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff9893;
+}
+
+.portfolio-headings {
+    width: 100vw;
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-bottom: 2em;
+}
+
+.divider-portfolio {
+    height: 4px;
+    width: 15.8em;
+    background-color: #ff0c00;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.portfolio-headings h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.portfolio .container-portfolio {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card-portfolio {
+    width: 300px;
+    height: 370px;
+    color: #ffffff;
+    background-color: #fdbbb7;
+    margin: 2em;
+}
+
+.card__img {
+    width: 100%;
+    height: 198px;
+    background-image: url(img/Computer-with-code-with-fdbbb7-background.png);
+    background-size: cover;
+}
+
+.card__tittle {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__projects__links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__projects__links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card__projects__links i {
+    font-size: 1.5em;
+}
+
+.card-portfolio .card-project-details {
+    margin: 1em;
+    width: 70%;
+}
+
+.card-portfolio .card-project-details a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.card-project-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.card-project-details {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #ff0c00;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #ff0c00;
+}
+
+.card-project-details:hover {
+    background-color: #ffffff;
+    color: #ff0c00;
+    box-shadow: 0px 6px -5px 0px #ff9893;
+}
+
+/*Aquí inicia el código de estilo de la sección "Contact Me"*/
+
+.contact-section {
+    width: 100vw;
+    background-color: #fdbbb7;
+}
+
+.contact-headings {
+    width: 100vw;
+    padding: 5em;
+}
+
+.divider-contact-section {
+    height: 4px;
+    width: 14.3em;
+    background-color: #ff0c00;
+    margin-top: 7px;
+    margin-bottom: 2em;
+}
+
+.contact-headings h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
