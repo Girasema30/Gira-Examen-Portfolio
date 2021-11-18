@@ -379,6 +379,8 @@ h1 span{
     box-shadow: 1px 9px 8px -5px #ff0d0062;
 }
 
+/*Aquí inicia el ccs style del footer*/
+
 .footer {
     display: flex;
     flex-direction: column;
