@@ -195,6 +195,10 @@ h1 span{
     margin: 2em;
 }
 
+.card-portfolio:hover {
+    box-shadow: 0 20px 25px -10px rgb(0, 0, 0, 0.5);
+}
+
 .card__img img {
     width: 100%;
     height: 198px;
@@ -250,24 +254,23 @@ h1 span{
     box-shadow: 1px 3px 11px -5px #ff0c00;
 }
 
-.card-project-details:hover {
-    color: #ff0c00;
-    background-color: #ffffff;
-    box-shadow: 0px 6px -5px 0px #ff9893;
-}
-
 /*Aquí inicia el código de estilo de la sección "Contact Me"*/
 
 .contact-section {
     width: 100vw;
     background-color: #fdbbb7;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-headings {
     width: 100vw;
-    padding-top: 3em;
-    padding-left: 5em;
-    padding-bottom: 1em;
+    padding-top: 2.5em;
+    padding-left: 4em;
+    padding-bottom: 2.6em;
 }
 
 .divider-contact-section {
@@ -275,7 +278,6 @@ h1 span{
     width: 14.3em;
     background-color: #ff0c00;
     margin-top: 7px;
-    margin-bottom: 2em;
 }
 
 .contact-headings h2 {
@@ -283,10 +285,130 @@ h1 span{
     color: #ffffff;
 }
 
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
 .container-contact img {
-    width: 400px;
-    height: 464px;
-    padding-top: 0;
-    padding-left: 5em;
-    padding-right: 1em;
+    width: 34em;
+    height: 28.1em;
+    margin-bottom: 1em;
+    border: #ff0c00 solid 2px;
+}
+
+#giraenoficinaimg:hover{
+    box-shadow: 0 20px 28px -10px #884e49;
+}
+
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.contact-form:hover {
+    box-shadow: 0 20px 28px -10px #884e49;
+}
+
+.contact-form h4 {
+    font-size: 30px;
+    color: #ff0c00;
+    font-weight: 800;
+}
+
+.contact-form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .inputbox input, .contact-form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ff0c00;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(102, 102, 102);
+}
+
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputbox input:valid ~ span,
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputbox input:valid ~ span {
+    color: #fc0f5e;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputbox input[type="submit"] {
+    width: 100px;
+    background: #ff9893;
+    color: #ff0c00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact-form .inputbox input[type="submit"]:hover {
+    color: #ffffff;
+    box-shadow: 1px 9px 8px -5px #ff0d0062;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background: #ff9893;
+}
+
+.footer-content {
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 3em;
+}
+
+.footer-content h5 {
+    font-size: 1.5em;
+}
+
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 305px;
+    margin-top: 1em;
+}
+
+.sotial-network i {
+    color: #ffffff;
 }
